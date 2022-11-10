@@ -20,6 +20,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- nav container -->
+    <div class="nav__container">
+
+        <!-- navigation bar -->
+        <nav>
+
+            <!-- logo container -->
+            <div class="logo__container">
+                <!-- logo -->
+                <a class="logo" href="/index.html">
+                    <div class="logo__image">
+                        <svg width="36px" height="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="currentColor" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path fill="#27272A" d="M14.747 9.125c.527-1.426 1.736-2.573 3.317-2.573c1.643 0 2.792 1.085 3.318 2.573l6.077 16.867c.186.496.248.931.248 1.147c0 1.209-.992 2.046-2.139 2.046c-1.303 0-1.954-.682-2.264-1.611l-.931-2.915h-8.62l-.93 2.884c-.31.961-.961 1.642-2.232 1.642c-1.24 0-2.294-.93-2.294-2.17c0-.496.155-.868.217-1.023l6.233-16.867zm.34 11.256h5.891l-2.883-8.992h-.062l-2.946 8.992z"></path></svg>
+                        <svg width="36px" height="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path  fill="currentColor" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path fill="#27272A" d="M8.917 10.117A2.903 2.903 0 0 1 8.7 8.97c0-1.302 1.147-2.232 2.387-2.232c1.055 0 1.706.682 2.108 1.519l4.806 12.898l4.807-12.898c.402-.837 1.053-1.519 2.107-1.519c1.24 0 2.387.93 2.387 2.232c0 .434-.06.744-.217 1.147l-6.789 17.271c-.404.992-.931 1.798-2.295 1.798c-1.364 0-1.891-.806-2.295-1.798L8.917 10.117z"></path></svg>
+                    </div>
+                    <div class="logo__name">
+                        <span>Antonio</span> 
+                        <span>Vissoni</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- menu container -->
+            <div class="menu__container">
+                <ul class="menu">
+                    <!-- home -->
+                    <li>
+                        <a class="menu__title current__title" href="/index.html">
+                            <div class="icon__container">
+                                <svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,8h0L14,2.74a3,3,0,0,0-4,0L4,8a3,3,0,0,0-1,2.26V19a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V10.25A3,3,0,0,0,20,8ZM14,20H10V15a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1Zm5-1a1,1,0,0,1-1,1H16V15a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v5H6a1,1,0,0,1-1-1V10.25a1,1,0,0,1,.34-.75l6-5.25a1,1,0,0,1,1.32,0l6,5.25a1,1,0,0,1,.34.75Z"/>
+                                </svg>
+                            </div>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- home -->
+                    <li>
+                        <a class="menu__title" href="/index.html">
+                            <div class="icon__container">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" fill="currentColor"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span>My story</span>
+                        </a>
+                    </li>
+                    <!-- resume -->
+                    <li>
+                        <a class="menu__title" href="/resume.html">
+                            <div class="icon__container">
+                                <svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M422.741,42.667h-60.07V32.491C362.671,14.543,348.128,0,330.18,0H181.828c-17.947,0-32.491,14.543-32.491,32.491v10.176     H89.259c-25.734,0-46.592,20.858-46.592,46.592v376.149c0,25.734,20.858,46.592,46.592,46.592h333.483     c25.734,0,46.592-20.858,46.592-46.592V89.259C469.333,63.525,448.475,42.667,422.741,42.667z M192.004,42.667H320v42.667     H192.004V42.667z M426.667,465.408c0,2.17-1.755,3.925-3.925,3.925H89.259c-2.17,0-3.925-1.755-3.925-3.925V89.259     c0-2.17,1.755-3.925,3.925-3.925h60.075v10.176c0,17.947,14.543,32.491,32.491,32.491h0.004h148.348h0.004     c17.947,0,32.491-14.543,32.491-32.491V85.333h60.07c2.17,0,3.925,1.755,3.925,3.925V465.408z"/>
+                                    <path d="M362.667,192h-128c-11.782,0-21.333,9.551-21.333,21.333c0,11.782,9.551,21.333,21.333,21.333h128     c11.782,0,21.333-9.551,21.333-21.333C384,201.551,374.449,192,362.667,192z"/>
+                                    <path d="M362.667,277.333h-128c-11.782,0-21.333,9.551-21.333,21.333c0,11.782,9.551,21.333,21.333,21.333h128     c11.782,0,21.333-9.551,21.333-21.333C384,286.885,374.449,277.333,362.667,277.333z"/>
+                                    <path d="M362.667,362.667h-128c-11.782,0-21.333,9.551-21.333,21.333c0,11.782,9.551,21.333,21.333,21.333h128     c11.782,0,21.333-9.551,21.333-21.333C384,372.218,374.449,362.667,362.667,362.667z"/>
+                                    <path d="M149.333,192C137.557,192,128,201.557,128,213.333s9.557,21.333,21.333,21.333s21.333-9.557,21.333-21.333     S161.109,192,149.333,192z"/>
+                                    <path d="M149.333,277.333c-11.776,0-21.333,9.557-21.333,21.333S137.557,320,149.333,320s21.333-9.557,21.333-21.333     S161.109,277.333,149.333,277.333z"/>
+                                    <path d="M149.333,362.667C137.557,362.667,128,372.224,128,384s9.557,21.333,21.333,21.333s21.333-9.557,21.333-21.333     S161.109,362.667,149.333,362.667z"/>
+                                
+                                </svg>
+                            </div>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <!-- portfolio -->
+                    <li>
+                        <a class="menu__title" href="/portfolio.html">
+                            <div class="icon__container">
+                                <svg class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 489.2 489.2" style="enable-background:new 0 0 489.2 489.2;" xml:space="preserve">
+                                    <path d="M39.5,377.35h160.9v44.1H169c-5.2,0-9.5,4.2-9.5,9.5v27.5c0,5.2,4.2,9.5,9.5,9.5h151.2c5.2,0,9.5-4.2,9.5-9.5v-27.5     c0-5.2-4.2-9.5-9.5-9.5h-31.4v-44.1h160.9c21.8,0,39.5-17.7,39.5-39.5V60.75c0-21.8-17.7-39.5-39.5-39.5H39.5     C17.7,21.25,0,38.95,0,60.75v277.1C0,359.65,17.7,377.35,39.5,377.35z M53.9,75.15h381.4v248H53.9V75.15z M244.6,104.65     c-52.1,0-94.5,42.4-94.5,94.5s42.4,94.5,94.5,94.5s94.5-42.4,94.5-94.5S296.7,104.65,244.6,104.65z M216.7,134.45     c-5.8,8-11.3,18.1-15.1,30.5H183C190.6,151.45,202.4,140.65,216.7,134.45z M177.1,219.05c-1.9-6.3-2.9-13-2.9-20     c0-6.9,1-13.6,2.9-20h21.2c-1,6.2-1.6,12.8-1.6,20s0.6,13.8,1.6,20H177.1z M183,233.25h18.6c3.8,12.4,9.4,22.5,15.1,30.5     C202.4,257.55,190.6,246.75,183,233.25z M237.5,266.45c-6.8-6.9-15.4-17.8-20.9-33.2h20.9V266.45z M237.5,219.05h-24.8     c-1.2-6.1-1.9-12.8-1.9-20s0.7-13.8,1.9-20h24.9v40H237.5z M237.5,164.95h-21c5.6-15.5,14.2-26.5,21-33.3V164.95z M306.2,164.95     h-18.6c-3.8-12.4-9.4-22.5-15.1-30.5C286.8,140.65,298.6,151.45,306.2,164.95z M251.7,131.75c6.8,6.9,15.4,17.8,20.9,33.2h-20.9     V131.75z M251.7,179.15h24.8c1.2,6.1,1.9,12.8,1.9,20s-0.7,13.8-1.9,20h-24.9v-40H251.7z M251.7,233.25h21     c-5.6,15.5-14.2,26.5-21,33.3V233.25z M272.5,263.75c5.8-8,11.3-18.1,15.1-30.5h18.6C298.6,246.75,286.8,257.55,272.5,263.75z      M315,199.05c0,6.9-1,13.6-2.9,20h-21.2c1-6.2,1.6-12.8,1.6-20s-0.6-13.8-1.6-20h21.2C314,185.45,315,192.15,315,199.05z"/>
+                                </svg>
+                            </div>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- contact container -->
+            <div class="contact-button__container">
+                <!-- contact button -->
+                <a class="contact-button" href="/contact.html">
+                    <div class="icon__container"> 
+                        <svg class="icon" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 29" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                                .st1{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+                            </style>
+                            <polyline class="st0" points="3,10 16,18 29,10 "/>
+                            <path class="st0" d="M7,12.5V3c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v9.5"/>
+                            <path class="st0" d="M25,5c2.2,0,4,1.8,4,4v14c0,2.2-1.8,4-4,4H7c-2.2,0-4-1.8-4-4V9c0-2.2,1.8-4,4-4"/>
+                            <line class="st0" x1="11" y1="5" x2="18" y2="5"/>
+                            <line class="st0" x1="11" y1="9" x2="14" y2="9"/>
+                        </svg>    
+                    </div>
+                    <span>Contact me</span>
+                </a>
+            </div>
+
+             <!-- mobile menu -->
+             <div class="mobile-menu__container">
+                <!-- contact button -->
+                <input type="checkbox" class="mobile-menu">
+                    <div class="icon__container">
+                        <svg class="icon" width="15px" height="15px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"/>
+                        </svg>
+                    </div>
+                </input>
+            </div>
+        </nav>
+    </div>
 </body>
 </html>
