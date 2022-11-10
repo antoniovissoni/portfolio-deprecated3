@@ -1,0 +1,65 @@
+/* color pallet and relative sizes */
+:root {
+    --background: #212224;
+    --softer-background: #212224;
+    --white: #F3F4F5;
+    --gray: #D4D4D8;
+    --black: #2d2d32;
+    --card-color: #333639;
+    --accent: #ffd60a;
+    --shadow-color: 240deg 5% 84%;
+    --shadow:
+        0px 0.4px 0.5px hsl(var(--shadow-color) / 0.11),
+        0px 1.2px 1.3px -0.8px hsl(var(--shadow-color) / 0.11),
+        0px 2.9px 3.3px -1.7px hsl(var(--shadow-color) / 0.11),
+        -0.1px 7px 7.9px -2.5px hsl(var(--shadow-color) / 0.11);
+
+    --usable-area: 120.0rem;
+    --giga: 7.0rem;
+    --huge: 5.4rem;
+    --extra-large: 3.6rem;
+    --large: 2.4rem;
+    --regular: 1.6rem;
+    --small: 1.2rem;
+
+    --border-radius: 2.4rem;
+    --tiny-gap: 0.8rem;
+    --slightly-bigger: scale(1.1);
+    --opacity: 0.6;
+    --font-light: 300;
+    --font-regular: 500;
+    --font-bold: 600;
+}
+
+/* reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* relative size trick using REM */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--regular);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    width: 100%;
+}
+
+/* text and icons */
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
