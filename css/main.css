@@ -63,3 +63,144 @@ a {
 ul {
     list-style-type: none;
 }
+
+/* navigation bar */
+.nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: var(--giga);
+    background-color: var(--softer-background);
+    z-index: 3;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    min-width: var(--usable-area);
+    padding: 0 var(--regular);
+    height: var(--extra-large);  
+}
+
+/* logo */
+.logo__container {
+    display: flex;
+    justify-content: flex-start;
+    height: var(--extra-large);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: var(--extra-large);
+}
+
+.logo__image {
+    display: flex;
+    height: inherit;
+}
+
+.logo__image svg:nth-child(2) {
+    margin-left: var(--tiny-gap);
+}
+
+.logo__name {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--tiny-gap);
+
+    color: var(--white);
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: var(--font-light);
+    letter-spacing: 0.3rem;
+}
+
+.logo__name, .logo__image {
+    color: var(--white);
+}
+
+/* menu */
+.menu__container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.menu {
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    list-style-type: none;
+    padding: auto var(--giga);
+}
+
+.menu__title {
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    font-weight: var(--font-light);
+    color: var(--white);
+    margin: 0rem var(--large);
+    height: var(--extra-large);
+}
+/* anchor for dot indicator */
+.menu__title span {
+    position: relative;
+}
+
+.icon__container {
+    position: relative;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin-right: var(--tiny-gap);
+}
+
+.icon {
+    display: flex;
+    height: inherit;
+    width: auto;
+    padding: 0.1rem;
+}
+
+/* contact button */
+.contact-button__container {
+    height: auto;
+    justify-self: flex-end;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    white-space: nowrap;
+    height: var(--extra-large);
+    padding: 0rem var(--large);
+    border-radius: var(--extra-large);
+    border: none;
+
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: var(--font-light);
+}
+
+/* hide mobile menu */
+
+.mobile-menu__container,
+.mobile-menu {
+    display: none;
+}
