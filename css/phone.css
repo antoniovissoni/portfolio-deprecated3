@@ -1,0 +1,96 @@
+/* For phone. Screen less than 720px */
+
+* {
+    --usable-area:  100vw;
+}
+
+/* hide menu */
+
+.mobile-menu__container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: var(--large);
+}
+
+.nav__container .menu__container, 
+.nav__container .contact-button__container {
+    width: 0;
+    overflow: hidden;
+}
+
+.mobile-menu__container svg {
+    height: var(--extra-large);
+    color: var(--white);
+}
+
+/* dropdown menu */
+.nav__container:hover,
+.nav__container:focus,
+.nav__container:active {
+    height: auto;
+    width: 100vw;
+}
+
+.nav__container:hover nav,
+.nav__container:focus nav,
+.nav__container:active nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;  
+}
+
+.nav__container:hover .logo,
+.nav__container:focus .logo,
+.nav__container:active .logo {
+      scale: 1.2;
+}
+
+.nav__container:hover nav > div,
+.nav__container:focus nav > div,
+.nav__container:active nav > div {
+    margin: var(--extra-large) auto;
+    width: auto;
+} 
+
+.nav__container:hover .menu,
+.nav__container:focus .menu,
+.nav__container:active .menu {
+    display: flex;
+    flex-direction: column;
+    scale: 1.2;
+} 
+
+.nav__container:hover .menu .menu__title,
+.nav__container:focus .menu .menu__title,
+.nav__container:active .menu .menu__title {
+    margin: var(--regular);
+}
+
+.nav__container:hover .mobile-menu__container,
+.nav__container:focus .mobile-menu__container,
+.nav__container:active .mobile-menu__container   {
+    display: none;
+}
+
+.nav__container:hover .contact-button,
+.nav__container:focus .contact-button,
+.nav__container:active .contact-button   {
+    height: var(--huge);
+}
+
+/* footer */
+footer .menu, footer .menu__container {
+    display: none;
+}
+
+footer .footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer__info span {
+    margin: var(--tiny-gap) 0;
+}
