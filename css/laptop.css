@@ -1,0 +1,40 @@
+/* For laptop and desktop. Screen between 1024px and 1440px*/
+
+* {
+    --usable-area:  90vw;
+}
+
+/* 3-column grid */
+.grid {
+    display:grid;
+    justify-content:center;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-areas: 
+        "card__1 card__1 card__2"
+        "card__3 card__4 card__5"
+        "card__6 card__6 card__6";
+}
+
+.card__1 {
+    grid-area: card__1;
+}
+
+.card__2 {
+    grid-area: card__2;
+}
+
+.card__3 {
+    grid-area: card__3;
+}
+
+.card__4 {
+    grid-area: card__4;
+}
+
+.card__5 {
+    grid-area: card__5;
+}
+
+.card__6 {
+    grid-area: card__6;
+}
