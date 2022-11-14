@@ -98,7 +98,7 @@ span {
 nav {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    min-width: var(--usable-area);
+    width: var(--usable-area);
     padding: 0 var(--regular);
     height: var(--extra-large);  
     color: var(--white);
@@ -263,7 +263,6 @@ main {
 
 
 /* footer */
-
 .footer__container {
     display: flex;
     justify-content: center;
