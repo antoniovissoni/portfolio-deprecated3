@@ -273,7 +273,9 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    padding: var(--regular) 0px;
+    width: var(--usable-area);
+    padding: var(--regular);
+    margin: 0rem var(--regular);
     text-align: center;
 }
 

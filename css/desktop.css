@@ -1,6 +1,7 @@
-/* For 4K screen. Screen more than 1600px*/
+/* For laptop and desktop. Screen between 1024px and 1600px*/
+
 * {
-    --usable-area:  145.5rem;
+    --usable-area:  90vw;
 }
 
 /* 4-column grid */
