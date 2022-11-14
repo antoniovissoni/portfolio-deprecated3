@@ -1,0 +1,113 @@
+
+/* animations */
+
+/* set default scale to 1.0 */
+.contact-button, .menu__title, .social-media__link, svg {
+    transform: scale(1.0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* hover animation: changes color and scales element up */
+.menu__title:hover,
+.menu__title:focus,
+.menu__title:active,
+
+.social-media__link:hover,
+.social-media__link:hover,
+.social-media__link:hover,
+
+.contact-button:hover,
+.contact-button:focus,
+.contact-button:active,
+
+a:hover,
+a:focus,
+a:active,
+
+a:hover svg,
+a:focus svg,
+a:active svg {
+    transform: var(--slightly-bigger);
+    transition: all 0.2s ease-in-out;
+    color: var(--accent);
+}
+
+a:hover span,
+a:focus span,
+a:active span {
+    scale: 1.0;
+    transition: all 0.2s ease-in-out;
+    color: var()
+}
+
+a:hover span,
+a:focus span,
+a:active span {
+    color: var(--accent);
+}
+
+
+/* no scale up for regular links */
+a:hover,
+a:focus,
+a:active {
+    transform: none;
+}
+
+.logo:hover svg,
+.logo:focus svg,
+.logo:active svg{
+    transform: none;
+    color: var(--white);
+}
+
+/* button animation */
+
+.contact-button {
+    animation: attention 3.0s ease-in-out;
+}
+
+@keyframes attention {
+    36%, 52% {
+        transform: none;
+    }
+    40% {
+        transform: var(--slightly-bigger) rotate(5deg);
+    }
+
+    44% {
+        transform: var(--slightly-bigger) rotate(-5deg);
+    }
+
+    48% {
+        transform: var(--slightly-bigger) rotate(5deg);
+    }
+}
+
+.contact-button:hover,
+.contact-button:focus,
+.contact-button:active,
+
+.contact-button:hover svg,
+.contact-button:focus svg,
+.contact-button:active svg {
+    color: var(--black);
+    background-color: var(--accent);
+ }
+
+.contact-button:hover span,
+.contact-button:focus span,
+.contact-button:active span {
+    transition: all 0.2s ease-in-out;
+    color: var(--black);
+}
+
+/* active page indicator */
+.current__title svg {
+    border-bottom: 0.2rem solid var(--white);
+    box-sizing: unset;
+}
+
+.current__title:hover svg {
+    border-bottom: 0.2rem solid var(--accent);
+}
