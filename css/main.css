@@ -217,6 +217,10 @@ nav {
     color: var(--black);    
 }
 
+.contact-button span {
+    color: var(--black);
+}
+
 /* hide mobile menu */
 
 .mobile-menu__container,
