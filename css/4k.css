@@ -1,0 +1,38 @@
+/* For 4K screen. Screen more than 1440px*/
+* {
+    --usable-area:  144.0rem;
+}
+
+/* 4-column grid */
+.grid {
+    display:grid;
+    justify-content:center;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    grid-template-areas: 
+        "card__1 card__1 card__2 card__3"
+        "card__4 card__5 card__6 card__6";
+}
+
+.card__1 {
+    grid-area: card__1;
+}
+
+.card__2 {
+    grid-area: card__2;
+}
+
+.card__3 {
+    grid-area: card__3;
+}
+
+.card__4 {
+    grid-area: card__4;
+}
+
+.card__5 {
+    grid-area: card__5;
+}
+
+.card__6 {
+    grid-area: card__6;
+}
