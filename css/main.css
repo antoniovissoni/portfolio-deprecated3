@@ -29,6 +29,7 @@
     --font-light: 300;
     --font-regular: 500;
     --font-bold: 600;
+    
 }
 
 /* reset defaults */
@@ -41,6 +42,7 @@
 /* relative size trick using REM */
 html {
     font-size: 62.5%;
+    
 }
 
 body {
@@ -58,10 +60,25 @@ body {
 a {
     text-decoration: none;
     outline: none;
+    color: var(--white);
 }
 
 ul {
     list-style-type: none;
+}
+
+svg {
+    color: var(--white);
+}
+
+p {
+    color: var(--white);
+    font-weight: 300;
+}
+
+span {
+    color: var(--white);
+    font-weight: 300;
 }
 
 /* navigation bar */
@@ -84,6 +101,7 @@ nav {
     min-width: var(--usable-area);
     padding: 0 var(--regular);
     height: var(--extra-large);  
+    color: var(--white);
 }
 
 /* logo */
@@ -112,8 +130,6 @@ nav {
     display: flex;
     flex-direction: column;
     margin-left: var(--tiny-gap);
-
-    color: var(--white);
     text-align: left;
     font-size: 1.3rem;
     font-weight: var(--font-light);
@@ -191,11 +207,14 @@ nav {
     padding: 0rem var(--large);
     border-radius: var(--extra-large);
     border: none;
-
     background-color: var(--white);
     color: var(--black);
     text-decoration: none;
     font-weight: var(--font-light);
+}
+
+.contact-button svg {
+    color: var(--black);    
 }
 
 /* hide mobile menu */
@@ -204,3 +223,4 @@ nav {
 .mobile-menu {
     display: none;
 }
+
