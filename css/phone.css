@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
     height: inherit;  
+    margin: var(--large) 0rem;
 }
 
 .nav__container:hover .logo,
@@ -51,7 +52,7 @@
 .nav__container:hover nav > div,
 .nav__container:focus nav > div,
 .nav__container:active nav > div {
-    margin: var(--extra-large) auto;
+    margin: var(--large) auto;
     width: auto;
 } 
 
