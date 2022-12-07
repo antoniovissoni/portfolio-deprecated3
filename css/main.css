@@ -19,6 +19,7 @@
     --huge: 5.4rem;
     --extra-large: 3.6rem;
     --large: 2.4rem;
+    --medium: 2.0rem;
     --regular: 1.6rem;
     --small: 1.2rem;
 
@@ -37,12 +38,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* relative size trick using REM */
 html {
     font-size: 62.5%;
-    
 }
 
 body {
@@ -50,7 +51,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: var(--regular);
-    font-family: 'Poppins', sans-serif;
     background-color: var(--background);
     width: 100%;
 }
@@ -251,16 +251,45 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 
     width: auto;
     height: 28.0rem;
-    padding: var(--huge);
+    padding: var(--extra-large);
     border-radius: var(--border-radius);
     background-color: var(--card-color);
     color: var(--white); 
     font-size: var(--regular);
 }
 
+.card__image {
+    height: 9.0rem;
+}
+
+.card__description {
+    width: 100%;
+    
+}
+
+.card__title {
+    font-size: var(--extra-large);
+}
+
+.card__subtitle {
+    font-size: var(--medium);
+    font-weight: var(--font-light);
+}
+
+.card__next {
+    height: var(--extra-large);
+    width: auto;
+}
+
+.container__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* footer */
 .footer__container {
