@@ -251,45 +251,52 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-between;
-
+    position: relative;
+    
     width: auto;
     height: 28.0rem;
     padding: var(--extra-large);
     border-radius: var(--border-radius);
     background-color: var(--card-color);
     color: var(--white); 
-    font-size: var(--regular);
 }
 
 .card__image {
-    height: 9.0rem;
+    height: auto;
+    width: 9.0rem;
+    align-self: flex-start;
 }
 
-.card__description {
+.card__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--regular);
     width: 100%;
-    
 }
 
 .card__title {
     font-size: var(--extra-large);
+    font-weight: var(--font-regular);
+}
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card__subtitle {
     font-size: var(--medium);
     font-weight: var(--font-light);
+    width: 85%;
+    height: min-content;
+    align-self: flex-start;
 }
 
 .card__icon {
+    align-self: center;
+    width: var(--extra-large);
     height: var(--extra-large);
-    width: auto;
-}
-
-.container__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 /* footer */
