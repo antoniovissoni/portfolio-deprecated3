@@ -263,14 +263,15 @@ main {
 }
 
 .card__image {
-    height: auto;
-    width: 9.0rem;
+    height: 8.0rem;
+    width: 8.0rem;
     align-self: flex-start;
 }
 
 .card__info {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
     row-gap: var(--regular);
     width: 100%;
 }
