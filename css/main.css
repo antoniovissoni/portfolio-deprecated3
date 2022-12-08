@@ -81,6 +81,7 @@ span {
     font-weight: 300;
 }
 
+
 /* navigation bar */
 .nav__container {
     display: flex;
@@ -280,7 +281,7 @@ main {
     font-weight: var(--font-light);
 }
 
-.card__next {
+.card__icon {
     height: var(--extra-large);
     width: auto;
 }
