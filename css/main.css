@@ -15,7 +15,7 @@
         -0.1px 7px 7.9px -2.5px hsl(var(--shadow-color) / 0.11);
 
     --usable-area: 120.0rem;
-    --giga: 7.0rem;
+    --giga: 8.0rem;
     --huge: 5.4rem;
     --extra-large: 3.6rem;
     --large: 2.4rem;
@@ -255,7 +255,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: var(--tiny-gap);
 
     height: 28.0rem;
     width: inherit;
@@ -276,8 +275,8 @@ main {
 
 .card__image { 
     align-self: center;
-    height: 9.0rem;
-    width: 9.0rem;
+    height: var(--giga);
+    width: var(--giga);
 }
 
 .card__body {
@@ -291,25 +290,35 @@ main {
 .card__icon {
     width: var(--extra-large);
     height: var(--extra-large);
-    margin-left: var(--tiny-gap);
-    align-self: flex-end;
+    margin: var(--tiny-gap);
+    justify-self: center;
+}
+
+.card__title, .card__subtitle { 
+    align-self: center;
 }
 
 .card__title {
-    font-size: var(--large);
     font-weight: var(--font-bold);
+    font-size: var(--large);
+    
 }
 
 .card__subtitle {
-    font-size: var(--medium);
     font-weight: var(--font-light);
-    vertical-align: -20px;
+    font-size: var(--medium);
+}
+
+.span__double {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 /* large text for desktop */
 .card__1 .card__title {
     font-size: var(--extra-large);
 }
+
 
 /* footer */
 .footer__container {
