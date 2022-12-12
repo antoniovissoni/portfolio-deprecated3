@@ -51,7 +51,7 @@ span a:hover {
     transition: all 0.1s ease-in-out;
 }
 .card:hover .card__icon {
-    transform: var(--slightly-bigger);
+    /* transform: var(--slightly-bigger); */
     transition: all 0.2s ease-in-out;
     color: var(--accent);
 }

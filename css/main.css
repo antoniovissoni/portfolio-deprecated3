@@ -290,8 +290,8 @@ main {
 .card__icon {
     width: var(--extra-large);
     height: var(--extra-large);
-    margin: var(--tiny-gap);
-    justify-self: center;
+    align-self: center;
+    margin-left: var(--regular);
 }
 
 .card__title, .card__subtitle { 
@@ -380,3 +380,5 @@ footer div {
 .footer__disclaimer a {
     text-decoration: underline;
 }
+
+

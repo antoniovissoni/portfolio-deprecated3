@@ -92,12 +92,12 @@ footer .menu, footer .menu__container {
     display: none;
 }
 
-footer .footer__info {
+footer .footer__disclaimer {
     display: flex;
     flex-direction: column;
 }
 
-footer .footer__info span {
+footer .footer__disclaimer span {
     margin: var(--tiny-gap) 0;
 }
 
