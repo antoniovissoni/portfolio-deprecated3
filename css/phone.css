@@ -96,13 +96,7 @@ footer .footer__info span {
     margin: var(--tiny-gap) 0;
 }
 
-/* smaller profile image */
-
-.card__image {
-    position: absolute;
-    float: right;
-    height: var(--huge);
-    width: var(--huge);
-    top: var(--extra-large);
-    right: var(--extra-large);
+/* smaller intro title */
+.card__1 .card__title {
+    font-size: var(--large);
 }

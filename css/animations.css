@@ -32,13 +32,27 @@ span a:hover {
 }
 
 /* card animation */
+.card {
+    animation: 0.8s card-loading ease-in-out;
+}
+
+@keyframes card-loading {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1.0);
+    }
+  }
+
+
 .card .card__icon {
     transform: scale(1.0);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 .card:hover .card__icon {
     transform: var(--slightly-bigger);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     color: var(--accent);
 }
 

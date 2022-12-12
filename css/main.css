@@ -28,8 +28,8 @@
     --slightly-bigger: scale(1.1);
     --opacity: 0.6;
     --font-light: 300;
-    --font-regular: 500;
-    --font-bold: 600;
+    --font-regular: 400;
+    --font-bold: 500;
     
 }
 
@@ -81,6 +81,9 @@ span {
     font-weight: 300;
 }
 
+.rounded {
+    border-radius: 50%;
+}
 
 /* navigation bar */
 .nav__container {
@@ -251,53 +254,61 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    
-    width: auto;
+    justify-content: flex-end;
+    gap: var(--tiny-gap);
+
     height: 28.0rem;
+    width: inherit;
+
     padding: var(--extra-large);
     border-radius: var(--border-radius);
     background-color: var(--card-color);
     color: var(--white); 
 }
 
-.card__image {
-    height: 8.0rem;
-    width: 8.0rem;
-    align-self: flex-start;
-}
-
-.card__info {
+.card__header {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
-    row-gap: var(--regular);
+    justify-content: space-between;
     width: 100%;
+    height: 100%;
+}
+
+.card__image { 
+    align-self: center;
+    height: 9.0rem;
+    width: 9.0rem;
+}
+
+.card__body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.card__icon {
+    width: var(--extra-large);
+    height: var(--extra-large);
+    margin-left: var(--tiny-gap);
+    align-self: flex-end;
 }
 
 .card__title {
-    font-size: var(--extra-large);
-    font-weight: var(--font-regular);
-}
-
-.card__description {
-    display: flex;
-    justify-content: space-between;
+    font-size: var(--large);
+    font-weight: var(--font-bold);
 }
 
 .card__subtitle {
     font-size: var(--medium);
     font-weight: var(--font-light);
-    width: 85%;
-    height: min-content;
-    align-self: flex-start;
+    vertical-align: -20px;
 }
 
-.card__icon {
-    align-self: center;
-    width: var(--extra-large);
-    height: var(--extra-large);
+/* large text for desktop */
+.card__1 .card__title {
+    font-size: var(--extra-large);
 }
 
 /* footer */
