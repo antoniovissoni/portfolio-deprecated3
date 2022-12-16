@@ -271,13 +271,15 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--accent); */
 }
 
 .card__image { 
     height: var(--giga);
-    width: auto;
+    width: var(--giga);
+    object-fit: cover;
 }
 
 .card__body {
@@ -329,20 +331,21 @@ main {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 }
 
-
-.card__4 a {
-    height: inherit;
-    width: inherit;
-    padding: 1.6rem;
+.card__4 .card__header a {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
 }
 
-.card__4 svg {
-    height: inherit;
-    width: inherit;
+.card__4 .card__header a svg {
+    display: flex;
+    height: 4.6rem;
+    width: 4.6rem;
 }
 
 .card__6 .card__header {
