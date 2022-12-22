@@ -18,7 +18,8 @@ span a:hover {
     transition: all 0.2s ease-in-out;
 }
 .hover__animation:hover svg, 
-.hover__animation:hover span {
+.hover__animation:hover span,
+.hover__animation:hover  {
     color: var(--accent);
 }
 
@@ -45,7 +46,7 @@ span a:hover {
     }
   }
 
-.card {
+/* .card {
     transition: all 0.1s ease-in-out;
 }
 
@@ -53,14 +54,16 @@ span a:hover {
     transition: all 0.2s ease-in-out;
     box-shadow: var(--shadow);
 }
+*/
+
 .card .card__icon {
     transform: scale(1.0);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .card:hover .card__icon {
     transition: all 0s ease-in-out;
     color: var(--accent);
-}
+} 
 
 /* active page indicator */
 .current__title svg {
