@@ -47,6 +47,8 @@
 .nav__container:focus .logo,
 .nav__container:active .logo {
       scale: 1.2;
+      padding: var(--tiny-gap);
+      height: auto;
 }
 
 .nav__container:hover nav > div,
@@ -74,6 +76,13 @@
 .nav__container:focus .mobile-menu__container,
 .nav__container:active .mobile-menu__container   {
     display: none;
+}
+
+.nav__container:hover .contact-button__container,
+.nav__container:focus .contact-button__container,
+.nav__container:active .contact-button__container   {
+    height: auto;
+    padding: var(--tiny-gap);
 }
 
 .nav__container:hover .contact-button,
