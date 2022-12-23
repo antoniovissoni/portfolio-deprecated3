@@ -29,7 +29,7 @@ span a:hover {
 }
 .contact-button:hover svg, 
 .contact-button:hover span {
-    color: var(--black);
+    color: var(--primary);
 }
 
 /* card animation */
@@ -67,7 +67,7 @@ span a:hover {
 
 /* active page indicator */
 .current__title svg {
-    border-bottom: 0.2rem solid var(--white);
+    border-bottom: 0.2rem solid var(--secondary);
     box-sizing: unset;
 }
 
