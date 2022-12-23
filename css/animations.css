@@ -56,10 +56,10 @@ span a:hover {
 }
 */
 
-.card .card__icon {
+/* .card .card__icon {
     transform: scale(1.0);
     transition: all 0.2s ease-in-out;
-}
+} */
 .card:hover .card__icon {
     transition: all 0s ease-in-out;
     color: var(--accent);
