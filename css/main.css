@@ -4,15 +4,15 @@
     --softer-background: #212224;
     --primary: #F3F4F5;
     --secondary: #2d2d32;
-    --accent: #ffd60a; 
-    --card-color: #333639;*/
-
+    */
 
     --background: #fcfaf4;
     --softer-background: #fcfaf4;
     --primary: #2d2d32;
     --secondary: #F3F4F5;
-    --accent: #f6aa1c;
+    --terciary: #696969;
+    --gray: #D3D3D3;
+    --accent: #FFA500;
     --card-color: #ffffff;
     
     --shadow-color: #0000000a;
@@ -100,12 +100,20 @@ span {
     fill: var(--accent);
 }
 
-.color__black {
+.color__primary {
+    fill: var(--primary);
+}
+
+.color__secondary {
     fill: var(--secondary);
 }
 
-.color__primary {
-    fill: var(--primary);
+.color__terciary {
+    fill: var(--terciary);
+}
+
+.color__gray {
+    fill: var(--gray);
 }
 
 /* navigation bar */
@@ -187,16 +195,17 @@ nav {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    primary-space: nowrap;
+    white-space: nowrap;
 
     font-weight: var(--font-light);
-    color: var(--primary);
     margin: 0rem var(--medium);
     height: auto;
 }
 /* anchor for dot indicator */
-.menu__title span {
+.menu__title span,
+.menu__title svg {
     position: relative;
+    color: var(--terciary);
 }
 
 .icon__container {
@@ -232,18 +241,15 @@ nav {
     padding: 0rem var(--large);
     border-radius: var(--extra-large);
     border: none;
+
     background-color: var(--primary);
-    color: var(-black);
     text-decoration: none;
     font-weight: var(--font-light);
 }
 
-.contact-button svg {
-    color: var(--secondary);    
-}
-
+.contact-button svg,
 .contact-button span {
-    color: var(--secondary);
+    color: var(--secondary);    
 }
 
 /* hide mobile menu */
@@ -298,6 +304,10 @@ main {
     height: 100%;
 }
 
+.card__header .card__image {
+    fill: var(--terciary);
+}
+
 .card__image { 
     height: var(--giga);
     width: var(--giga);
@@ -317,6 +327,7 @@ main {
     height: var(--extra-large);
     align-self: flex-end;
     margin: var(--tiny-gap);
+    fill: var(--gray);
 }
 
 .card__title, .card__subtitle { 
@@ -331,6 +342,7 @@ main {
 .card__subtitle {
     font-weight: var(--font-light);
     font-size: var(--regular);
+    color: var(--terciary)
 }
 
 .span__double {
@@ -341,6 +353,7 @@ main {
 /* large text for desktop */
 .card__1 .card__title {
     font-size: var(--extra-large);
+    font-weight: 700;
 }
 
 .card__1 .card__subtitle {
@@ -368,6 +381,7 @@ main {
     display: flex;
     height: 4.6rem;
     width: 4.6rem;
+    color: var(--terciary);
 }
 
 .card__4 .card__body {
@@ -419,6 +433,7 @@ footer div {
 .social-media__container svg {
     height: inherit;
     width: auto;
+    color: var(--terciary);
 }
 
 .footer__disclaimer {

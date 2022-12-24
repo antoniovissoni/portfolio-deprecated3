@@ -29,7 +29,7 @@ span a:hover {
 }
 .contact-button:hover svg, 
 .contact-button:hover span {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 /* card animation */
@@ -46,24 +46,35 @@ span a:hover {
     }
   }
 
-/* .card {
-    transition: all 0.1s ease-in-out;
+
+
+.card {
+    border: 2px solid transparent;
+}
+
+.card:hover .card__image {
+    fill: var(--accent);
 }
 
 .card:hover {
-    transition: all 0.2s ease-in-out;
-    box-shadow: var(--shadow);
+    transition: border 0s ease-in-out;
+    border: 2px solid var(--accent);
 }
-*/
 
-/* .card .card__icon {
-    transform: scale(1.0);
-    transition: all 0.2s ease-in-out;
-} */
 .card:hover .card__icon {
     transition: all 0s ease-in-out;
-    color: var(--accent);
+    fill: var(--accent);
 } 
+
+.card__4 a svg {
+    transition: color 0.2s ease-in-out;
+    color: var(--terciary);
+}
+
+.card__4 a:hover svg {
+    transition: color 0s;
+    color: var(--accent);
+}
 
 /* active page indicator */
 .current__title svg {
